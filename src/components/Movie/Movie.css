@@ -1,0 +1,42 @@
+.textDescription{
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:2px;
+  }
+  
+  .textDescription img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .textDescription:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .textDescription :not(img){
+    position:absolute;
+    z-index:1;
+    top:25%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textDescription h3{
+    top:75%
+  }
+
+  .textDescription h4{
+    top:85%
+    
+  }
+
+  .textDescription:hover :not(img){
+    opacity:1;
+  }
