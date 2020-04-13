@@ -28,7 +28,7 @@ class App extends Component {
     const { movies, searchfield, isLoaded } = this.state;
     
     const filteredMovies = movies.filter(movie =>{
-      return movie.original_title.toLowerCase().includes(searchfield.toLowerCase());
+      return movie.title.toLowerCase().includes(searchfield.toLowerCase());
     })
     return !isLoaded ? <h1 className='tc f-subheadline lh-solid'>Loading Movies!</h1> :
      (
